@@ -66,7 +66,7 @@ hi def link javaDeclType Keyword
 " Data Types
 syn keyword javaType boolean char byte short int long float double void
 syn keyword javaNonPrimitiveType String Integer
-syn keyword javaMapType Map ArrayList
+syn match javaMapType "Map\+<\@=\|ArrayList\+<\@="
 syn match javaPublicType "^\s\+[A-Z][A-Za-z]\+\(\s\+\w\+\s*=\)\@="
 syn match javaPublicType "\((\)\@<=\w\+\(\s\w\+)\)\@="
 hi def link javaPublicType javaType
