@@ -1,11 +1,35 @@
 # Snippets for Java
 
 snippet main "Main Function"
-public static void main(String[] args) {
+public static void main(String[] args)
+{
 	${1:/*Your Code Here*/}
+}
+endsnippet
+
+snippet class "Class"
+public class ${1:ClassName}
+{
+	$0
 }
 endsnippet
 
 snippet map "Map<String, Integer>"
 Map<${1:String}, ${2:Integer}>
+endsnippet
+
+snippet pln "System.out.println()"
+System.out.println(${1:String});
+endsnippet
+
+snippet try "Try Catch"
+try {
+	$1
+} catch (Exception e) {
+	$0
+}
+endsnippet
+
+snippet exit "System.exit(0)"
+System.exit(${1:0});
 endsnippet
