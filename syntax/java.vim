@@ -1,9 +1,7 @@
 " Language: Java
 " Maintainer: Jacob Riddle <jacobriddle94@gmail.com>
-" Last Change: 2015 Jul 18
-
+" Last Change: 2015 Jul 19
 "finish
-
 if exists("b:current_syntax")
 	finish
 endif
@@ -37,9 +35,9 @@ hi def link javaError Error
 
 " Keywords
 syn keyword javaTypedef this super
-syn keyword javaOperator new instanceof
+syn keyword javaOperator new instanceof try catch
 syn keyword javaStorageClass static synchronized transient volatile final strictfp seralizable
-syn keyword javaExceptions throw try catch finally
+syn keyword javaExceptions throw finally
 syn keyword javaAssert assert
 syn keyword javaMethodDecl synchronized throws
 syn keyword javaClassDecl extends implements interface
@@ -67,7 +65,7 @@ hi def link javaDeclType Keyword
 syn keyword javaType boolean char byte short int long float double void
 syn keyword javaNonPrimitiveType String Integer
 syn match javaMapType "Map\+<\@=\|ArrayList\+<\@="
-syn match javaPublicType "^\s\+[A-Z][A-Za-z]\+\(\s\+\w\+\s*=\)\@="
+syn match javaPublicType "^\s\+\w\+\(\s\+\w\+\s*=\)\@="
 syn match javaPublicType "\((\)\@<=\w\+\(\s\w\+)\)\@="
 hi def link javaPublicType javaType
 hi def link javaNonPrimitiveType javaType
