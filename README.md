@@ -2,6 +2,14 @@
 
 Syntax update for Java in Vim
 
+## Screenshots
+
+### Old Busted
+![old-busted](https://github.com/rudes/vim-java/blob/master/doc/old-busted.png)
+
+### New Hotness
+![new-hotness](https://github.com/rudes/vim-java/blob/master/doc/new-hotness.png)
+
 ### Installation
 
 Using [vim-pathogen](https://github.com/tpope/vim-pathogen)
